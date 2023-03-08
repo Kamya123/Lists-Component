@@ -22,12 +22,11 @@ nav {
 
 .nav_links {
     display: flex;
-    gap: 6rem;
+    gap: 8rem;
     align-items: center;
 }
 
 .nav_links li {
-    padding: 1rem;
     transition: var(--transition);
 }
 
@@ -37,4 +36,25 @@ nav {
 
 .nav_links li>a:visited {
     color: #25554D;
+}
+
+
+
+
+@media screen and (max-width: 950px) {
+    .nav_links {
+        gap: 6rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav_links {
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .nav_links {
+        gap: 3rem;
+    }
 }
