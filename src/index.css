@@ -52,30 +52,57 @@ body {
     justify-content: space-around;
     align-items: center;
     height: 3.5rem;
+    width: 100vw;
 }
 
 .lists h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 14px;
     font-weight: 700;
     line-height: 17px;
+    width: 25%;
 }
 
 .special {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
+    width: 25%;
 }
 
 .date, .action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 14px;
     font-weight: 600;
     line-height: 17px;
     color: var(--color--nav-background);
+    width: 25%;
+    gap: 2rem;
 }
 
 .date_heading, .action_heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
+    width: 25%;
 }
+
+small {
+    font-size: 100%;
+}
+
+.view, .print {
+    cursor: pointer;
+}
+
 

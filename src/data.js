@@ -29,7 +29,8 @@ export const details = [
         name: 'Bessie Cooper',
         specialization: 'Bessie Cooper',
         date: 'dd/mm/yyyy',
-        action: 'View',
+        view: 'View',
+        print: 'Print',
         amount: '500'
     },
     {
@@ -37,7 +38,8 @@ export const details = [
         name: 'Devon Lane',
         specialization: 'Devin Lane',
         date: 'dd/mm/yyyy',
-        action: 'View',
+        view: 'View',
+        print: 'Print',
         amount: '500'
     },
     {
@@ -45,7 +47,8 @@ export const details = [
         name: 'Kristin Watson',
         specialization: 'Kristin Watson',
         date: 'dd/mm/yyyy',
-        action: 'View',
+        view: 'View',
+        print: 'Print',
         amount: '500'
     },
 ]

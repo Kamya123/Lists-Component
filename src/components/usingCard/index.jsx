@@ -8,18 +8,21 @@ const UsingCard = () => {
     <div className='usingCard_wrapper container'>
       <div className="lists">
         <h4> Doctor name </h4>
-        <small className='special'> Specialization </small>
-        <small className='date_heading'> Date </small>
+        <small className='special'> Appointment ID </small>
+        <small className='date_heading'> Date & Time </small>
         <small className='action_heading'> Action </small>
       </div>
       {
-        details.map(({ id, name, specialization, date, action }) => {
+        details.map(({ id, name, specialization, date, view, print }) => {
           return (
             <List className="usingCards_cards" key={id} >
               <h4> {name} </h4>
               <small className='special'> {specialization} </small>
               <small className='date'> {date} </small>
-              <small className='action'> {action} </small>
+              <div className='action'>
+                <small className='view'> {view} </small>
+                <small className='print'> {print} </small>
+              </div>
             </List>
           )
         })
