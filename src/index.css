@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+
+    --transition: all 500ms ease;
+
+
+    --color--nav-background: #55CAF0;
+    --color--text: #26323C;
+    --color--border: #26323c2e;
+    --color--secondary: #FFFFFF;
 }
+
+
+
+
+
+/* GENERAL STYLES CSS */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+    background: var(--color--secondary);
+    color: var(--color--text);
+}
+
+.container {
+    position: relative;
+    top: 4.8rem;
+}
+
+.lists {
+    display: flex;
+    border-bottom: 1px solid var(--color--border);
+    justify-content: space-around;
+    align-items: center;
+    height: 3.5rem;
+}
+
+.lists h4 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+}
+
+.special {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.date, .action {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    color: var(--color--nav-background);
+}
+
+.date_heading, .action_heading {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
