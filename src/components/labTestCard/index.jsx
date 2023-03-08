@@ -4,22 +4,29 @@ import List from '../../UI/List'
 
 
 const LabTestCard = () => {
+    const openPDF = (url) => {
+        window.open(url, '_blank');
+    };
+
     return (
         <div className='LabTestCard_wrapper container'>
             <div className="lists">
                 <h4> Test name </h4>
-                <small className='date_heading'> Date & Time </small>
+                <small className='date_heading'> Date &amp; Time </small>
                 <small className='action_heading'> Action </small>
             </div>
             {
-                details.map(({ id, name, date, view, print }) => {
+                details.map(({ id, name, date, view }) => {
+                    const pdfUrl = require(`../../assets/pdf/file_pdf.pdf`);
+
                     return (
                         <List className="LabTestCards_cards lists" key={id} >
                             <h4> {name} </h4>
                             <small className='date'> {date} </small>
                             <div className='action'>
-                                <small className='view'> {view} </small>
-                                <small className='print'> {print} </small>
+                                <small className="view" onClick={() => openPDF(pdfUrl)}>
+                                    {view}
+                                </small>
                             </div>
                         </List>
                     )

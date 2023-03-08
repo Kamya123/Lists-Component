@@ -101,7 +101,7 @@ small {
     font-size: 100%;
 }
 
-.view, .print {
+.view {
     cursor: pointer;
 }
 

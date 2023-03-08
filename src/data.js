@@ -30,7 +30,6 @@ export const details = [
         specialization: 'Bessie Cooper',
         date: 'dd/mm/yyyy',
         view: 'View',
-        print: 'Print',
         amount: '500'
     },
     {
@@ -39,7 +38,6 @@ export const details = [
         specialization: 'Devin Lane',
         date: 'dd/mm/yyyy',
         view: 'View',
-        print: 'Print',
         amount: '500'
     },
     {
@@ -48,7 +46,6 @@ export const details = [
         specialization: 'Kristin Watson',
         date: 'dd/mm/yyyy',
         view: 'View',
-        print: 'Print',
         amount: '500'
     },
 ]
